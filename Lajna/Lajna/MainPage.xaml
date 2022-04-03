@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lajna.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Test of audio player!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Grid ColumnDefinitions="0.33*, 0.33*, 0.33*" RowDefinitions="auto, auto, auto, auto">
+            <Button x:Name="button_play" 
+                    Grid.Column="0" 
+                    Grid.Row="0" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    HeightRequest="{Binding Width, Source={x:Reference button_play}}"
+                    Text="Alive" 
+                    Clicked="button_play_Clicked"/>
+
+            <Button x:Name="button_play_new" 
+                    Grid.Column="1" 
+                    Grid.Row="0" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    WidthRequest="{Binding Width, Source={x:Reference button_play}}"
+                    HeightRequest="{Binding Width, Source={x:Reference button_play_new}}"
+                    Text="Something Else Very Long" 
+                    Clicked="button_play_Clicked"/>
+        </Grid>
+
+        <!-->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" HeightRequest="100">
+            <Button x:Name="button_play" Text="Alive" Clicked="button_play_Clicked"/>
+            <Button x:Name="button_play_two" Text="Something Else" Clicked="button_play_two_Clicked"/>
+            <Button x:Name="button_play_three" Text="Something Else Very Long" Margin="" Clicked="button_play_three_Clicked"/>
+        </StackLayout>
+        <-->
+            
+    </StackLayout>
+
+</ContentPage>

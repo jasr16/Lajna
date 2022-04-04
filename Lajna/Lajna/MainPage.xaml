@@ -8,24 +8,63 @@
             <Label Text="Test of audio player!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Grid ColumnDefinitions="0.33*, 0.33*, 0.33*" RowDefinitions="auto, auto, auto, auto">
-            <Button x:Name="button_play" 
+            <Button x:Name="button_d1" 
                     Grid.Column="0" 
                     Grid.Row="0" 
                     HorizontalOptions="Fill"
                     VerticalOptions="CenterAndExpand" 
-                    HeightRequest="{Binding Width, Source={x:Reference button_play}}"
-                    Text="Alive" 
-                    Clicked="button_play_Clicked"/>
+                    HeightRequest="{Binding Width, Source={x:Reference button_d1}}"
+                    Text="D1" 
+                    Clicked="button_d1_Clicked"/>
 
-            <Button x:Name="button_play_new" 
+            <Button x:Name="button_haviri" 
                     Grid.Column="1" 
                     Grid.Row="0" 
                     HorizontalOptions="Fill"
                     VerticalOptions="CenterAndExpand" 
-                    WidthRequest="{Binding Width, Source={x:Reference button_play}}"
-                    HeightRequest="{Binding Width, Source={x:Reference button_play_new}}"
-                    Text="Something Else Very Long" 
-                    Clicked="button_play_Clicked"/>
+                    WidthRequest="{Binding Width, Source={x:Reference button_d1}}"
+                    HeightRequest="{Binding Width, Source={x:Reference button_haviri}}"
+                    Text="Havíři" 
+                    Clicked="button_haviri_Clicked"/>
+
+            <Button x:Name="button_hymna" 
+                    Grid.Column="2" 
+                    Grid.Row="0" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    WidthRequest="{Binding Width, Source={x:Reference button_d1}}"
+                    HeightRequest="{Binding Width, Source={x:Reference button_hymna}}"
+                    Text="Hymna" 
+                    Clicked="button_hymna_Clicked"/>
+
+            <Button x:Name="button_judging" 
+                    Grid.Column="0" 
+                    Grid.Row="1" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    HeightRequest="{Binding Width, Source={x:Reference button_judging}}"
+                    Text="I doesn't judge anyone" 
+                    Clicked="button_judging_Clicked"/>
+
+            <Button x:Name="button_pokuta" 
+                    Grid.Column="1" 
+                    Grid.Row="1" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    WidthRequest="{Binding Width, Source={x:Reference button_judging}}"
+                    HeightRequest="{Binding Width, Source={x:Reference button_pokuta}}"
+                    Text="Pokuta" 
+                    Clicked="button_pokuta_Clicked"/>
+
+            <Button x:Name="button_superb" 
+                    Grid.Column="2" 
+                    Grid.Row="1" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    WidthRequest="{Binding Width, Source={x:Reference button_judging}}"
+                    HeightRequest="{Binding Width, Source={x:Reference button_superb}}"
+                    Text="Superb" 
+                    Clicked="button_superb_Clicked"/>
         </Grid>
 
         <!-->

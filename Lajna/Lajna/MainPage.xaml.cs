@@ -52,5 +52,35 @@ namespace Lajna
         {
             button_play_Clicked(sender, e);
         }
+
+        private void button_d1_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_haviri_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_hymna_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_judging_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_pokuta_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_superb_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

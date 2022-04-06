@@ -5,24 +5,24 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Test of audio player!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="Lajna" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Grid ColumnDefinitions="0.33*, 0.33*, 0.33*" RowDefinitions="auto, auto, auto, auto">
-            <Button x:Name="button_d1" 
+            <Button x:Name="button_film" 
                     Grid.Column="0" 
                     Grid.Row="0" 
                     HorizontalOptions="Fill"
                     VerticalOptions="CenterAndExpand" 
-                    HeightRequest="{Binding Width, Source={x:Reference button_d1}}"
-                    Text="D1" 
-                    Clicked="button_d1_Clicked"/>
+                    HeightRequest="{Binding Width, Source={x:Reference button_film}}"
+                    Text="Jednou o vás natočí film" 
+                    Clicked="button_film_Clicked"/>
 
             <Button x:Name="button_haviri" 
                     Grid.Column="1" 
                     Grid.Row="0" 
                     HorizontalOptions="Fill"
                     VerticalOptions="CenterAndExpand" 
-                    WidthRequest="{Binding Width, Source={x:Reference button_d1}}"
+                    WidthRequest="{Binding Width, Source={x:Reference button_film}}"
                     HeightRequest="{Binding Width, Source={x:Reference button_haviri}}"
                     Text="Havíři" 
                     Clicked="button_haviri_Clicked"/>
@@ -32,7 +32,7 @@
                     Grid.Row="0" 
                     HorizontalOptions="Fill"
                     VerticalOptions="CenterAndExpand" 
-                    WidthRequest="{Binding Width, Source={x:Reference button_d1}}"
+                    WidthRequest="{Binding Width, Source={x:Reference button_film}}"
                     HeightRequest="{Binding Width, Source={x:Reference button_hymna}}"
                     Text="Hymna" 
                     Clicked="button_hymna_Clicked"/>
@@ -67,14 +67,6 @@
                     Clicked="button_superb_Clicked"/>
         </Grid>
 
-        <!-->
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" HeightRequest="100">
-            <Button x:Name="button_play" Text="Alive" Clicked="button_play_Clicked"/>
-            <Button x:Name="button_play_two" Text="Something Else" Clicked="button_play_two_Clicked"/>
-            <Button x:Name="button_play_three" Text="Something Else Very Long" Margin="" Clicked="button_play_three_Clicked"/>
-        </StackLayout>
-        <-->
-            
     </StackLayout>
 
 </ContentPage>

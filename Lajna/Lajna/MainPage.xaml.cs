@@ -50,6 +50,34 @@ namespace Lajna
             DependencyService.Get<IAudio>().PlayAudioFile("superb.mp3");
         }
 
-        
+        private void button_dobra_parta_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayAudioFile("dobra_parta.mp3");
+        }
+
+        private void button_havirov_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayAudioFile("havirov.mp3");
+        }
+
+        private void button_jedeme_pres_hradec_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayAudioFile("jedeme_pres_hradec.mp3");
+        }
+
+        private void button_panely_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayAudioFile("panely.mp3");
+        }
+
+        private void button_postup_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayAudioFile("postup.mp3");
+        }
+
+        private void button_zamrzla_voda_Clicked(object sender, EventArgs e)
+        {
+            DependencyService.Get<IAudio>().PlayAudioFile("zamrzla_voda.mp3");
+        }
     }
 }

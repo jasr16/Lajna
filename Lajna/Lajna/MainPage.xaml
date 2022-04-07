@@ -65,6 +65,64 @@
                     HeightRequest="{Binding Width, Source={x:Reference button_superb}}"
                     Text="Superb" 
                     Clicked="button_superb_Clicked"/>
+
+            <Button x:Name="button_dobra_parta" 
+                    Grid.Column="0" 
+                    Grid.Row="2" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    HeightRequest="{Binding Width, Source={x:Reference button_dobra_parta}}"
+                    Text="Dobrá parta" 
+                    Clicked="button_dobra_parta_Clicked"/>
+
+            <Button x:Name="button_havirov" 
+                    Grid.Column="1" 
+                    Grid.Row="2" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    WidthRequest="{Binding Width, Source={x:Reference button_dobra_parta}}"
+                    HeightRequest="{Binding Width, Source={x:Reference button_havirov}}"
+                    Text="Havířov" 
+                    Clicked="button_havirov_Clicked"/>
+
+            <Button x:Name="button_jedeme_pres_hradec" 
+                    Grid.Column="2" 
+                    Grid.Row="2" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    WidthRequest="{Binding Width, Source={x:Reference button_dobra_parta}}"
+                    HeightRequest="{Binding Width, Source={x:Reference button_jedeme_pres_hradec}}"
+                    Text="Jedeme přes Hradec" 
+                    Clicked="button_jedeme_pres_hradec_Clicked"/>
+
+            <Button x:Name="button_panely" 
+                    Grid.Column="0" 
+                    Grid.Row="3" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    HeightRequest="{Binding Width, Source={x:Reference button_panely}}"
+                    Text="Panely" 
+                    Clicked="button_panely_Clicked"/>
+
+            <Button x:Name="button_postup" 
+                    Grid.Column="1" 
+                    Grid.Row="3" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    WidthRequest="{Binding Width, Source={x:Reference button_panely}}"
+                    HeightRequest="{Binding Width, Source={x:Reference button_postup}}"
+                    Text="Postup" 
+                    Clicked="button_postup_Clicked"/>
+
+            <Button x:Name="button_zamrzla_voda" 
+                    Grid.Column="2" 
+                    Grid.Row="3" 
+                    HorizontalOptions="Fill"
+                    VerticalOptions="CenterAndExpand" 
+                    WidthRequest="{Binding Width, Source={x:Reference button_panely}}"
+                    HeightRequest="{Binding Width, Source={x:Reference button_zamrzla_voda}}"
+                    Text="Zamrzlá voda" 
+                    Clicked="button_zamrzla_voda_Clicked"/>
         </Grid>
 
     </StackLayout>
